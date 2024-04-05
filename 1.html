@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>梁哲源科技</title>
+    <style>
+        body {
+            background-color: #000;
+            color: #fff;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            text-align: center;
+            padding: 50px 0;
+        }
+        h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px #000;
+        }
+        p {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .project {
+            margin-bottom: 50px;
+            border-bottom: 1px solid #666;
+            padding-bottom: 20px;
+        }
+        .project:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        .project h2 {
+            font-size: 2em;
+            margin-bottom: 10px;
+            text-decoration: underline;
+            color: #6bf;
+        }
+        .project p {
+            font-size: 1em;
+        }
+        .cyberpunk {
+            position: relative;
+            overflow: hidden;
+        }
+        .cyberpunk::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('cyberpunk.jpg') center center/cover no-repeat;
+            opacity: 0.6;
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+    <header class="cyberpunk">
+        <h1>梁哲源科技</h1>
+        <p>致力于打造未来的科技产品</p>
+    </header>
+    <div class="container">
+        <div class="project">
+            <h2>即将推出的产品</h2>
+            <p>我们正在努力开发一系列赛博朋克风格的科技产品，敬请期待！</p>
+        </div>
+        <div class="project">
+            <h2>已完成的项目</h2>
+            <p>1. 智能城市监控系统：利用人工智能技术，实现城市安全监控的自动化和智能化。</p>
+            <p>2. 虚拟现实眼镜：提供沉浸式的虚拟现实体验，让用户享受全新的视觉感受。</p>
+            <p>3. 智能家居控制系统：通过手机App或语音控制，实现家居设备的远程控制和智能化管理。</p>
+        </div>
+    </div>
+</body>
+</html>
